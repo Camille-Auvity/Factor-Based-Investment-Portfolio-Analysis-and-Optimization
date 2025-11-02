@@ -1,51 +1,43 @@
-# Analyse-et-Optimisation-de-Portfeuilles-d-Investissement-par-Facteurs
-Répliquer les résultats de Dichtl et al. (2021) en construisant six facteurs (MKT, VAL, CAP, MOM, QUA, VOL) à partir des indices MSCI USA, puis en optimisant des portfeuilles via six stratégies d’allocation. Évaluation des performances hors échantillon avec des métriques financières et visualisation des résultats.
+# Factor-Based Investment Portfolio Analysis and Optimization
+Replicate the results of Dichtl et al. (2021) by constructing six factors (MKT, VAL, CAP, MOM, QUA, VOL) using MSCI USA indices, then optimizing portfolios through six allocation strategies. Performance is evaluated out-of-sample using financial metrics, and results are visualized.
 
-# Inversiones Tarea 3: Análisis de Factores y Estrategias de Portafolio
+# Investment Assignment 3: Factor Analysis and Portfolio Strategies
+## Project Description
+This repository contains the analysis and results of Assignment 3 from the Investment course. The project focuses on constructing investment factors, performing descriptive analysis of these factors, and comparing different portfolio strategies.
 
-## Descripción del Proyecto
-Este repositorio contiene el análisis y los resultados de la Tarea 3 del curso de Inversiones. El proyecto se centra en la construcción de factores de inversión, el análisis descriptivo de estos factores, y la comparación de diferentes estrategias de portafolio.
+# Project Structure
+## Part 1: Factor Construction and Descriptive Analysis
 
-## Autores
-- **Julien Duval**
-- **Camille Auvity**
-- **Hadrien Bregou**
+- Factors Built: MKT, VAL, CAP, MOM, QUA, VOL
+- Statistical Analysis: Mean, standard deviation, skewness, and kurtosis for each factor.
+- Correlation Matrix: Pearson correlations between factors.
+- Plots: Cumulative returns of the factors.
 
-## Estructura del Proyecto
+## Part 2: Comparison of Portfolio Strategies
 
-### Parte 1: Construcción de Factores y Análisis Descriptivo
-- **Factores Construidos:** MKT, VAL, CAP, MOM, QUA, VOL
-- **Análisis Estadístico:** Media, desviación estándar, asimetría, y curtosis de cada factor.
-- **Matriz de Correlación:** Correlaciones de Pearson entre los factores.
-- **Gráficos:** Rentabilidad acumulada de los factores.
+### Strategies Analyzed:
 
-### Parte 2: Comparación de Estrategias de Portafolio
-- **Estrategias Analizadas:**
-  - Portafolio Equal Weight (EW)
-  - Portafolio de Mínima Varianza (MinVar)
-  - Portafolio Mean-Variance (MV)
-  - Portafolio Black-Litterman (BL)
-  - Portafolio Volatility Timing (VT)
-  - Portafolio Reward-to-Risk Timing (RRT)
+- Equal Weight Portfolio (EW)
+- Minimum Variance Portfolio (MinVar)
+- Mean-Variance Portfolio (MV)
+- Black-Litterman Portfolio (BL)
+- Volatility Timing Portfolio (VT)
+- Reward-to-Risk Timing Portfolio (RRT)
 
-### Parte 3: Análisis de Estrategias
-- **Métricas de Rendimiento:**
-  - Ratio de Sharpe
-  - Downside Risk
-  - Ratio de Sortino
-  - Maximum Drawdown (MDD)
-  - MPPM (Manipulation-Proof Performance Measure)
-- **Gráficos:** Retornos acumulados y ponderaciones de los portafolios.
+## Part 3: Strategy Analysis
 
-## Resultados Destacados
-- **Factores:** El factor MKT mostró la mayor volatilidad y eventos extremos, mientras que QUA y VOL fueron más estables.
-- **Estrategias:** MinVar y VT destacaron por su bajo riesgo y estabilidad, mientras que MV y RRT mostraron mayor volatilidad en busca de rendimientos más altos.
+### Performance Metrics:
 
-## Requisitos
-- Python 3.8 o superior
-- Librerías: pandas, numpy, matplotlib, seaborn
+- Sharpe Ratio
+- Downside Risk
+- Sortino Ratio
+- Maximum Drawdown (MDD)
+- MPPM (Manipulation-Proof Performance Measure)
 
-## Uso
-1. Clona este repositorio.
-2. Asegúrate de tener instaladas las librerías necesarias.
-3. Ejecuta los scripts de Python para replicar los análisis y gráficos.
+Plots: Cumulative returns and portfolio weights.
+
+## Key Results
+
+Factors: The MKT factor showed the highest volatility and extreme events, while QUA and VOL were more stable.
+Strategies: MinVar and VT stood out for their low risk and stability, while MV and RRT showed higher volatility in pursuit of higher returns.
+
